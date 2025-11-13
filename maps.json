@@ -1,0 +1,50 @@
+[
+    {
+    "name":"Baranggay Tankulan",
+    "title": "Baranggay Tankulan",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.359254631534261, 
+    "lng":124.86655670462572
+    },
+    {
+    "name":"Baranggay Diclum",
+    "title": "Baranggay Diclum",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.3632576107142,  
+    "lng":124.84851090134501
+    },
+    {
+    "name":"Baranggay Damilag",
+    "title": "Baranggay Damilag",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.35853005960225,   
+    "lng":124.81373550583758
+    },
+    {
+    "name":"Baranggay Alae",
+    "title": "Baranggay Alae",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.408737859201434,    
+    "lng":124.81110827666961
+    },
+    {
+    "name":"Baranggay Lunocan",
+    "title": "Baranggay Lunocan",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.44541638216035,     
+    "lng":124.84132067920552
+    },
+    {
+    "name":"Baranggay Mantibugao",
+    "title": "Baranggay Mantibugao",
+    "description":"Water Condition Status",
+    "img":"",
+    "lat":8.456283423746704,    
+    "lng":124.82140795951253
+    }
+]    
