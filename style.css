@@ -3,14 +3,48 @@ h1{
     padding: 40px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.map-wrapper {
+    display: absolute;
+    right: 40px;
+    top: 100px;
+    gap: 10px;
+    padding: 20px 40px;
+
+}
 #map {
     height: 680px;
     width: 680px;
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 40px;
+    right: 40px;
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
+}
+#info-panel {
+    position: absolute;
+    top: 110px;
+    flex: 1;
+    min-width: 500px;
+    max-width: 700px;
+    height: 680px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow-y: auto;
+}
+#info-panel img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+#info-panel h3 {
+    margin: 10px 0 5px;
+}
+#info-panel p {
+    margin: 5px 0;
+    color: #333;
 }

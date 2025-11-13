@@ -2,7 +2,7 @@
     {
     "name":"Baranggay Tankulan",
     "title": "Baranggay Tankulan",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.359254631534261, 
     "lng":124.86655670462572
@@ -10,7 +10,7 @@
     {
     "name":"Baranggay Diclum",
     "title": "Baranggay Diclum",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.3632576107142,  
     "lng":124.84851090134501
@@ -18,7 +18,7 @@
     {
     "name":"Baranggay Damilag",
     "title": "Baranggay Damilag",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.35853005960225,   
     "lng":124.81373550583758
@@ -26,7 +26,7 @@
     {
     "name":"Baranggay Alae",
     "title": "Baranggay Alae",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.408737859201434,    
     "lng":124.81110827666961
@@ -34,7 +34,7 @@
     {
     "name":"Baranggay Lunocan",
     "title": "Baranggay Lunocan",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.44541638216035,     
     "lng":124.84132067920552
@@ -42,7 +42,7 @@
     {
     "name":"Baranggay Mantibugao",
     "title": "Baranggay Mantibugao",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.456283423746704,    
     "lng":124.82140795951253
@@ -50,7 +50,7 @@
     {
     "name":"Baranggay Dalirig",
     "title": "Baranggay Dalirig",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.375452491778848,   
     "lng":124.90449206557471  
@@ -58,7 +58,7 @@
     {
     "name":"Baranggay Agusan Canyon",
     "title": "Baranggay Agusan Canyon",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.318385243936985,    
     "lng":124.82552783230936 
@@ -66,7 +66,7 @@
     {
     "name":"Baranggay Maluko",
     "title": "Baranggay Maluko",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.41077564609925, 
     "lng":124.96217028813375
@@ -74,7 +74,7 @@
     {
     "name":"Baranggay San Miguel",
     "title": "Baranggay San Miguel",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.38122668845218, 
     "lng":124.83441130855732
@@ -82,7 +82,7 @@
     {
     "name":"Baranggay Lingion",
     "title": "Baranggay Lingion",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.403367108855774,  
     "lng":124.88971567151839
@@ -90,15 +90,15 @@
     {
     "name":"Baranggay Sankanan",
     "title": "Baranggay Sankanan",
-    "description":"Water Condition Status",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.328147963599692, 
     "lng":124.85170243098752
     }, 
     {
-    "name":"Baranggay Sankanan",
-    "title": "Baranggay Sankanan",
-    "description":"Water Condition Status",
+    "name":"Baranggay Santo Nino",
+    "title": "Baranggay Santo Nino",
+    "description":"Water Condition Status recently:",
     "img":"",
     "lat":8.433857736053259, 
     "lng":124.86551884032971
