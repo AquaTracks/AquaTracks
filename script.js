@@ -36,10 +36,13 @@ function initMap(mapDataUrl) {
             <h3>${pin.title}</h3>
             <p><strong>Type:</strong> ${pin.locationType}</p>
             <p>${pin.description}</p>
+
+            <canvas id="pinChart" width="300" height="200"></canvas>
             
             
 
           `;
+          loadPinChart(pin.chartDataUrl);
           
         });
 
@@ -125,3 +128,35 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const chart = new LineChart("linechart","linedata.json");
     chart.init();
 });
+
+
+let activeChart = null;
+
+async function loadPinChart(dataUrl) {
+
+  const response = await fetch(dataUrl);
+  const chartData = await response.json();
+
+  const ctx = document.getElementById("pinChart").getContext("2d");
+
+  if (activeChart) {
+    activeChart.destroy();
+  }
+
+  activeChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: chartData.labels,
+      datasets: [{
+        label: "Water Availability",
+        data: chartData.values,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+}
