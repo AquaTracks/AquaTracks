@@ -5,7 +5,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/tankulan.jpg",
     "lat":8.359254631534261, 
-    "lng":124.86655670462572
+    "lng":124.86655670462572,
+    "chartDataUrl": "chartdata/tankulan.json"
     },
     {
     "name":"Baranggay Diclum",
