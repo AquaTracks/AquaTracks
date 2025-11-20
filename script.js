@@ -34,7 +34,6 @@ function initMap(mapDataUrl) {
           infoPanel.innerHTML = `
             <img src="${pin.img}" alt="${pin.title}">
             <h3>${pin.title}</h3>
-            <p><strong>Type:</strong> ${pin.locationType}</p>
             <p>${pin.description}</p>
 
             <canvas id="pinChart" width="300" height="200"></canvas>

@@ -14,7 +14,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/diclum.jpg",
     "lat":8.3632576107142,  
-    "lng":124.84851090134501
+    "lng":124.84851090134501,
+    "chartDataUrl": "chartdata/diclum.json"
     },
     {
     "name":"Baranggay Damilag",
@@ -22,7 +23,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/damilag.jpg",
     "lat":8.35853005960225,   
-    "lng":124.81373550583758
+    "lng":124.81373550583758,
+    "chartDataUrl": "chartdata/damilag.json"
     },
     {
     "name":"Baranggay Alae",
@@ -30,7 +32,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/alae.jpg",
     "lat":8.408737859201434,    
-    "lng":124.81110827666961
+    "lng":124.81110827666961,
+    "chartDataUrl": "chartdata/alae.json"
     },
     {
     "name":"Baranggay Lunocan",
@@ -38,7 +41,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/lunocan.jpg",
     "lat":8.44541638216035,     
-    "lng":124.84132067920552
+    "lng":124.84132067920552,
+    "chartDataUrl": "chartdata/lunocan.json"
     },
     {
     "name":"Baranggay Mantibugao",
@@ -46,7 +50,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/mantibugao.jpg",
     "lat":8.456283423746704,    
-    "lng":124.82140795951253
+    "lng":124.82140795951253,
+    "chartDataUrl": "chartdata/mantibugao.json"
     },
     {
     "name":"Baranggay Dalirig",
@@ -54,7 +59,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/dalirig.jpg",
     "lat":8.375452491778848,   
-    "lng":124.90449206557471  
+    "lng":124.90449206557471 ,
+    "chartDataUrl": "chartdata/dalirig.json" 
     },
     {
     "name":"Baranggay Agusan Canyon",
@@ -62,7 +68,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/agusan-canyon.jpg",
     "lat":8.318385243936985,    
-    "lng":124.82552783230936 
+    "lng":124.82552783230936,
+    "chartDataUrl": "chartdata/agusan-canyon.json" 
     },
     {
     "name":"Baranggay Maluko",
@@ -70,7 +77,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/maluko.jpg",
     "lat":8.41077564609925, 
-    "lng":124.96217028813375
+    "lng":124.96217028813375,
+    "chartDataUrl": "chartdata/maluko.json"
     },   
     {
     "name":"Baranggay San Miguel",
@@ -78,7 +86,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/san-miguel.png",
     "lat":8.38122668845218, 
-    "lng":124.83441130855732
+    "lng":124.83441130855732,
+    "chartDataUrl": "chartdata/san-miguel.json"
     },    
     {
     "name":"Baranggay Lingion",
@@ -86,7 +95,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/lingion.jpg",
     "lat":8.403367108855774,  
-    "lng":124.88971567151839
+    "lng":124.88971567151839,
+    "chartDataUrl": "chartdata/lingion.json"
     },
     {
     "name":"Baranggay Sankanan",
@@ -94,7 +104,8 @@
     "description":"Water Condition Status recently:",
     "img":"images/sankanan.jpg",
     "lat":8.328147963599692, 
-    "lng":124.85170243098752
+    "lng":124.85170243098752,
+    "chartDataUrl": "chartdata/sankanan.json"
     }, 
     {
     "name":"Baranggay Santo Nino",
@@ -102,6 +113,7 @@
     "description":"Water Condition Status recently:",
     "img":"images/santo-nino.jpg",
     "lat":8.433857736053259, 
-    "lng":124.86551884032971
+    "lng":124.86551884032971,
+    "chartDataUrl": "chartdata/santo-nino.json"
     }                
 ]    
