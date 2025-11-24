@@ -6,7 +6,9 @@
     "img":"images/tankulan.jpg",
     "lat":8.359254631534261, 
     "lng":124.86655670462572,
-    "chartDataUrl": "chartdata/tankulan.json"
+    "chart1": "chartdata/tankulan-1.json",
+    "chart2": "chartdata/tankulan-2.json",
+    "chart3": "chartdata/tankulan-3.json"
     },
     {
     "name":"Baranggay Diclum",

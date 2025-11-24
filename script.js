@@ -36,13 +36,14 @@ function initMap(mapDataUrl) {
             <h3>${pin.title}</h3>
             <p>${pin.description}</p>
 
-            <canvas id="pinChart" width="300" height="200"></canvas>
-            
-            
-
+            <canvas id="pinChart1" width="300" height="200"></canvas>
+            <canvas id="pinChart2" width="300" height="200"></canvas>
+            <canvas id="pinChart3" width="300" height="200"></canvas>
           `;
-          loadPinChart(pin.chartDataUrl);
-          
+
+          loadPinChart(pin.chart1, "pinChart1");
+          loadPinChart(pin.chart2, "pinChart2");
+          loadPinChart(pin.chart3, "pinChart3");
         });
 
         markerGroups[type].addLayer(marker);
@@ -69,80 +70,73 @@ document.addEventListener("DOMContentLoaded", () => {
   initMap('maps.json');
 });
 
-class LineChart{
-    constructor(canvasId,dataUrl){
-        this.canvasId = canvasId;
-        this.dataUrl = dataUrl;
-        this.chart = null;
+class LineChart {
+  constructor(canvasId, dataUrl) {
+    this.canvasId = canvasId;
+    this.dataUrl = dataUrl;
+    this.chart = null;
+  }
 
-
-    }
-    renderChart(data){
-        const ctx = document.getElementById(this.canvasId).getContext("2d");
-        this.chart = new Chart(ctx,{
-            type:"line",
-            data:{
-                labels: data.labels,
-                datasets:[{
-                    label:"Water Availability",
-                    data:data.values,
-                    borderwidth:2
-                }]
-            },
-
-            options:{
-                scales:{
-                    y:{
-                        beginAtZero:true
-                    }
-                }
-            }
-        });
-
-    }
-    async fetchData(){
-        try{
-            const response = await fetch(this.dataUrl);
-            if(!response.ok) throw new Error('Failed to load data: ${response.statusText}')
-
-            const data = await response.json();
-
-            return data;
-
-        } catch(error){
-            console.error("error fetching data:", error);
-            return null;
+  renderChart(data) {
+    const ctx = document.getElementById(this.canvasId).getContext("2d");
+    this.chart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: data.labels,
+        datasets: [{
+          label: "Water Availability",
+          data: data.values,
+          borderwidth: 2
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true }
         }
+      }
+    });
+  }
 
-    }
+  async fetchData() {
+    try {
+      const response = await fetch(this.dataUrl);
+      if (!response.ok) throw new Error('Failed to load data');
 
-    async init(){
-        const data = await this.fetchData();
-        if(data){
-            this.renderChart(data);
-        }
+      const data = await response.json();
+      return data;
+
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return null;
     }
+  }
+
+  async init() {
+    const data = await this.fetchData();
+    if (data) {
+      this.renderChart(data);
+    }
+  }
 }
-document.addEventListener("DOMContentLoaded", ()=>{
-    const chart = new LineChart("linechart","linedata.json");
-    chart.init();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const chart = new LineChart("linechart", "linedata.json");
+  chart.init();
 });
 
+let activeCharts = {};
 
-let activeChart = null;
-
-async function loadPinChart(dataUrl) {
-
+async function loadPinChart(dataUrl, canvasId) {
   const response = await fetch(dataUrl);
   const chartData = await response.json();
 
-  const ctx = document.getElementById("pinChart").getContext("2d");
+  const ctx = document.getElementById(canvasId).getContext("2d");
 
-  if (activeChart) {
-    activeChart.destroy();
+  if (activeCharts[canvasId]) {
+    activeCharts[canvasId].destroy();
   }
 
-  activeChart = new Chart(ctx, {
+  activeCharts[canvasId] = new Chart(ctx, {
     type: "line",
     data: {
       labels: chartData.labels,
