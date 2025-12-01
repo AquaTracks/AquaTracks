@@ -17,7 +17,9 @@
     "img":"images/diclum.jpg",
     "lat":8.3632576107142,  
     "lng":124.84851090134501,
-    "chartDataUrl": "chartdata/diclum.json"
+    "chart1": "chartdata/diclum-1.json",
+    "chart2": "chartdata/diclum-2.json",
+    "chart3": "chartdata/diclum-3.json"
     },
     {
     "name":"Baranggay Damilag",
@@ -26,7 +28,9 @@
     "img":"images/damilag.jpg",
     "lat":8.35853005960225,   
     "lng":124.81373550583758,
-    "chartDataUrl": "chartdata/damilag.json"
+    "chart1": "chartdata/damilag-1.json",
+    "chart2": "chartdata/damilag-2.json",
+    "chart3": "chartdata/damilag-3.json"
     },
     {
     "name":"Baranggay Alae",
@@ -35,7 +39,9 @@
     "img":"images/alae.jpg",
     "lat":8.408737859201434,    
     "lng":124.81110827666961,
-    "chartDataUrl": "chartdata/alae.json"
+    "chart1": "chartdata/alae-1.json",
+    "chart2": "chartdata/alae-2.json",
+    "chart3": "chartdata/alae-3.json"
     },
     {
     "name":"Baranggay Lunocan",
@@ -44,7 +50,9 @@
     "img":"images/lunocan.jpg",
     "lat":8.44541638216035,     
     "lng":124.84132067920552,
-    "chartDataUrl": "chartdata/lunocan.json"
+    "chart1": "chartdata/lunocan-1.json",
+    "chart2": "chartdata/lunocan-2.json",
+    "chart3": "chartdata/lunocan-3.json"
     },
     {
     "name":"Baranggay Mantibugao",
@@ -53,7 +61,9 @@
     "img":"images/mantibugao.jpg",
     "lat":8.456283423746704,    
     "lng":124.82140795951253,
-    "chartDataUrl": "chartdata/mantibugao.json"
+    "chart1": "chartdata/mantibugao-1.json",
+    "chart2": "chartdata/mantibugao-2.json",
+    "chart3": "chartdata/mantibugao-3.json"
     },
     {
     "name":"Baranggay Dalirig",
@@ -62,7 +72,9 @@
     "img":"images/dalirig.jpg",
     "lat":8.375452491778848,   
     "lng":124.90449206557471 ,
-    "chartDataUrl": "chartdata/dalirig.json" 
+    "chart1": "chartdata/dalirig-1.json",
+    "chart2": "chartdata/dalirig-2.json",
+    "chart3": "chartdata/dalirig-3.json" 
     },
     {
     "name":"Baranggay Agusan Canyon",
@@ -71,7 +83,9 @@
     "img":"images/agusan-canyon.jpg",
     "lat":8.318385243936985,    
     "lng":124.82552783230936,
-    "chartDataUrl": "chartdata/agusan-canyon.json" 
+    "chart1": "chartdata/agusan-canyon-1.json",
+    "chart2": "chartdata/agusan-canyon-2.json",
+    "chart3": "chartdata/agusan-canyon-3.json"
     },
     {
     "name":"Baranggay Maluko",
@@ -80,7 +94,9 @@
     "img":"images/maluko.jpg",
     "lat":8.41077564609925, 
     "lng":124.96217028813375,
-    "chartDataUrl": "chartdata/maluko.json"
+    "chart1": "chartdata/maluko-1.json",
+    "chart2": "chartdata/maluko-2.json",
+    "chart3": "chartdata/maluko-3.json"
     },   
     {
     "name":"Baranggay San Miguel",
@@ -89,7 +105,9 @@
     "img":"images/san-miguel.png",
     "lat":8.38122668845218, 
     "lng":124.83441130855732,
-    "chartDataUrl": "chartdata/san-miguel.json"
+    "chart1": "chartdata/san-miguel-1.json",
+    "chart2": "chartdata/san-miguel-2.json",
+    "chart3": "chartdata/san-miguel-3.json"
     },    
     {
     "name":"Baranggay Lingion",
@@ -98,7 +116,9 @@
     "img":"images/lingion.jpg",
     "lat":8.403367108855774,  
     "lng":124.88971567151839,
-    "chartDataUrl": "chartdata/lingion.json"
+    "chart1": "chartdata/lingion-1.json",
+    "chart2": "chartdata/lingion-2.json",
+    "chart3": "chartdata/lingion-3.json"
     },
     {
     "name":"Baranggay Sankanan",
@@ -107,7 +127,9 @@
     "img":"images/sankanan.jpg",
     "lat":8.328147963599692, 
     "lng":124.85170243098752,
-    "chartDataUrl": "chartdata/sankanan.json"
+    "chart1": "chartdata/sankanan-1.json",
+    "chart2": "chartdata/sankanan-2.json",
+    "chart3": "chartdata/sankanan-3.json"
     }, 
     {
     "name":"Baranggay Santo Nino",
@@ -116,6 +138,8 @@
     "img":"images/Sto Nino.jpg",
     "lat":8.433857736053259, 
     "lng":124.86551884032971,
-    "chartDataUrl": "chartdata/Sto Nino.json"
+    "chart1": "chartdata/santo-nino-1.json",
+    "chart2": "chartdata/santo-nino-2.json",
+    "chart3": "chartdata/santo-nino-3.json"
     }                
 ]    
