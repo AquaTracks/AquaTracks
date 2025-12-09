@@ -20,34 +20,43 @@ function initMap(mapDataUrl) {
     .then(response => response.json())
     .then(data => {
       data.forEach(pin => {
-        const type = pin.locationType || "Other";
+  const type = pin.locationType || "Other";
 
-        if (!markerGroups[type]) {
-          markerGroups[type] = L.layerGroup();
-        }
+  if (!markerGroups[type]) {
+    markerGroups[type] = L.layerGroup();
+  }
 
-        const marker = L.marker([pin.lat, pin.lng]);
+  // Custom faucet icon
+  const faucetIcon = L.icon({
+    iconUrl: 'images/faucet.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+  });
 
-        // When marker is clicked, update the info panel
-        marker.on('click', () => {
-          const infoPanel = document.getElementById('info-panel');
-          infoPanel.innerHTML = `
-            <img src="${pin.img}" alt="${pin.title}">
-            <h3>${pin.title}</h3>
-            <p>${pin.description}</p>
+  const marker = L.marker([pin.lat, pin.lng], {
+     icon: faucetIcon
+  });
 
-            <canvas id="pinChart1" width="300" height="200"></canvas>
-            <canvas id="pinChart2" width="300" height="200"></canvas>
-            <canvas id="pinChart3" width="300" height="200"></canvas>
-          `;
+  marker.on('click', () => {
+    const infoPanel = document.getElementById('info-panel');
+    infoPanel.innerHTML = `
+      <img src="${pin.img}" alt="${pin.title}">
+      <h3>${pin.title}</h3>
+      <p>${pin.description}</p>
 
-          loadPinChart(pin.chart1, "pinChart1");
-          loadPinChart(pin.chart2, "pinChart2");
-          loadPinChart(pin.chart3, "pinChart3");
-        });
+      <canvas id="pinChart1" width="300" height="200"></canvas>
+      <canvas id="pinChart2" width="300" height="200"></canvas>
+      <canvas id="pinChart3" width="300" height="200"></canvas>
+    `;
 
-        markerGroups[type].addLayer(marker);
-      });
+    loadPinChart(pin.chart1, "pinChart1");
+    loadPinChart(pin.chart2, "pinChart2");
+    loadPinChart(pin.chart3, "pinChart3");
+  });
+
+  markerGroups[type].addLayer(marker);
+});
 
       Object.values(markerGroups).forEach(group => group.addTo(map));
 
